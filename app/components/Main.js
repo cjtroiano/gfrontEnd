@@ -29,32 +29,6 @@ var Main = React.createClass({
 			gscore: "item" 
 		}
 	},
-	// componentDidMount: function (){
-	// 	console.log(this.state)
-	// 	if(this.state.activeItem === 'home'){
-	// 		this.setState({
-	// 			activeItem: "home",
-	// 			home: "activeItem",
-	// 			resume: "item",
-	// 			gscore: "item"
-	// 		})
-	// 	}else if(this.state.activeItem === 'resume'){
-	// 		this.setState({
-	// 			activeItem: "resume",
-	// 			home: "item",
-	// 			resume: "active Item",
-	// 			gscore: "item"
-	// 		})
-	// 	}else {
-	// 		this.setState({
-	// 			activeItem: "gscore",
-	// 			home: "item",
-	// 			resume: "item",
-	// 			gscore: "active Item"
-	// 		})
-	// 	}
-
-	// },
 	handleChange (event){
 		console.log(event.target.text)
 		console.log(this.state)
