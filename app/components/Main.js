@@ -7,20 +7,15 @@ var IndexLink = ReactRouter.IndexLink
 
 
 var Main = React.createClass({
-	/*PropTypes: {
-		activeItem: PropTypes.string,
-		home: PropTypes.string,
-		resume: PropTypes.string,
-		gscore: PropTypes.string
-	},
-	getDefaultProps: function (){
-		return {
-			activeItem: 'home',
-			home: 'active item',
-			resume: 'item',
-			gscore: 'item'
-		}
-	},*/
+	/*maybe use the routing props to decide which is active to 
+	fix the refresh issue
+	make table sortable
+	make entire button selectable
+	fix up navbar file
+	design resume and home tabs
+	use different navbar class?
+	fix backend permissions to be readOnly for guests?
+	*/
 	getInitialState: function (){
 		return {
 			activeItem: "home",
@@ -30,7 +25,8 @@ var Main = React.createClass({
 		}
 	},
 	handleChange (event){
-		console.log(event.target.text)
+		console.log("location", this.props.location.pathname)
+		console.log("event.target", event)
 		console.log(this.state)
 		if(event.target.text === 'Home'){
 			this.setState({
@@ -55,6 +51,30 @@ var Main = React.createClass({
 			})
 		}
 	},
+	/*componentWillMount: function (){
+		if(this.props.location.pathname === '/'){
+			this.setState({
+				activeItem: "home",
+				home: "active item",
+				resume: "item",
+				gscore: "item"
+			})
+		}else if(this.props.location.pathname === '/resume'){
+			this.setState({
+				activeItem: "resume",
+				home: "item",
+				resume: "active item",
+				gscore: "item"
+			})
+		}else {
+			this.setState({
+				activeItem: "gscore",
+				home: "item",
+				resume: "item",
+				gscore: "active item"
+			})
+		}
+	},*/
 
 	render: function () {
 		//console.log(this.state)

@@ -7,14 +7,15 @@ var IndexRoute = ReactRouter.IndexRoute;
 var Main = require('../components/Main')
 var Home = require('../components/Home')
 var Resume = require('../components/Resume')
-var Gscore = require('../components/Gscore')
+//var Gscore = require('../components/Gscore')
+var GscoreContainer = require('../containers/GscoreContainer')
 
 var routes = (
 	<Router history={hashHistory}>
 		<Route path='/' component={Main}>
 			<IndexRoute component={Home} />
 			<Route path='/resume' component={Resume} />
-			<Route path='/Gscore' component={Gscore} />
+			<Route path='/gscore' component={GscoreContainer} />
 		</Route>
 	</Router>
 )
