@@ -13,7 +13,7 @@ var GscoreContainer = React.createClass({
 	componentWillMount: function(){
 		GscoreHelper.getScores()
 			.then (function(promise){
-				console.log("inside promise",promise.data)
+				//console.log("inside promise",promise.data)
 				this.setState({
 					isLoading: false,
 					scores: promise.data

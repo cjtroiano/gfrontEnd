@@ -3,7 +3,7 @@ var PropTypes = React.PropTypes
 
 function GscoreRow (props){
 	var row = props.row
-	console.log("row",row)
+	//console.log("row",row)
 	return(
 		<tr>
 			<td>{row.Course}</td>
